@@ -1,59 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARTHUR MOTORS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylessheet"/>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARTHUR Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylessheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1> ARTHUR Motors</h1>
-            <div class="menu-hamburguer">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="container container-flex">
+        <h1>ARTHUR Motors</h1>
+        <div class="menu-hamburguer">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Em destaque</a>
-                    </li>
-                    <li>
-                        <a href="#">Promoçāo</a>
-                    </li>
-                    <li>
-                        <a href="#">Contatos</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      </div>
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Best-selling</a>
+            </li>
+            <li>
+              <a href="#">Sales</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <div id="carousel-images">
-        <img src="./images/slide1.png" alt="Posche car">
-        <img src="./images/slide2.png" alt="Bmw Car">
-        <img src="./images/slide3.png" alt="Ford Car">
+      <img src="./images/slide1.png" alt="Posche car" />
+      <img src="./images/slide2.png" alt="Bmw Car" />
+      <img src="./images/slide3.png" alt="Ford Car" />
     </div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('#carousel-images').slick({
-            autoplay:true,
-        }); 
-    })
-</script>
-</body>
+
+    <section id="about-us">
+      <div class="container container-flex">
+        <img src="./images/loja.jpg" alt="Arthur Motors image" />
+        <div>
+          <h2>About us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+            debitis consequuntur hic, velit dolore corporis optio et dolorum
+            sequi distinctio architecto officiis necessitatibus omnis reiciendis
+            deserunt aperiam praesentium voluptatem rem?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            corrupti, ipsum dolorum reiciendis harum consectetur quas libero
+            porro, et obcaecati accusantium? Quia, neque sapiente qui odio
+            quibusdam libero voluptate debitis!
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="container">
+        <h2>Best-selling</h2>
+        <ul class="container-flex vehicles-list">
+          <li>
+            <img src="./images/carro-bmw.png" alt="" />
+            <h3>BMW Car</h3>
+            <p>
+                Series 3 3.0 Convertible 2dr Step Auto Diesel
+            </p>
+            <div class="price">
+                <strong>£ 6,950</strong>
+            </div>
+            
+            <button type="button">Details</button>
+          </li>
+          <li class="central-item">
+            <img src="./images/carro-bmw.png" alt="" />
+            <h3>BMW Car</h3>
+            <p>
+                Series 3 3.0 Convertible 2dr Step Auto Diesel
+            </p>
+            <div class="price">
+                <strong>£ 6,950</strong>
+            </div>
+            <button type="button">Details</button>
+          </li>
+          <li>
+            <img src="./images/carro-bmw.png" alt="" />
+            <h3>BMW Car</h3>
+            <p>
+                Series 3 3.0 Convertible 2dr Step Auto Diesel
+            </p>
+            <div class="price">
+                <strong>£ 6,950</strong>
+            </div>
+            <button type="button">Details</button>
+          </li>
+          <li>
+            <img src="./images/carro-bmw.png" alt="" />
+            <h3>BMW Car</h3>
+            <p>
+                Series 3 3.0 Convertible 2dr Step Auto Diesel
+            </p>
+            <div class="price">
+                <strong>£ 6,950</strong>
+            </div>
+            <button type="button">Details</button>
+          </li>
+          <li class="central-item">
+            <img src="./images/carro-bmw.png" alt="" />
+            <h3>BMW Car</h3>
+            <p>
+                Series 3 3.0 Convertible 2dr Step Auto Diesel
+            </p>
+            <div class="price">
+                <strong>£ 6,950</strong>
+            </div>
+            <button type="button">Details</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+        <div class="container">
+          <h2>Sales</h2>
+          <ul class="container-flex vehicles-list">
+            <li>
+              <img src="./images/carro-bmw.png" alt="" />
+              <h3>BMW Car</h3>
+              <p>
+                  Series 3 3.0 Convertible 2dr Step Auto Diesel
+              </p>
+              <div class="price">
+            <del>£10,000</del>
+                <strong>£ 6,950</strong>
+            </div>
+              <button type="button">Details</button>
+            </li>
+            <li class="central-item">
+              <img src="./images/carro-bmw.png" alt="" />
+              <h3>BMW Car</h3>
+              <p>
+                  Series 3 3.0 Convertible 2dr Step Auto Diesel
+              </p>
+              <div class="price">
+            <del>£10,000</del>
+                <strong>£ 6,950</strong>
+            </div>
+              <button type="button">Details</button>
+            </li>
+            <li>
+              <img src="./images/carro-bmw.png" alt="" />
+              <h3>BMW Car</h3>
+              <p>
+                  Series 3 3.0 Convertible 2dr Step Auto Diesel
+              </p>
+              <div class="price">
+            <del>£10,000</del>
+                <strong>£ 6,950</strong>
+            </div>
+              <button type="button">Details</button>
+            </li>
+            <li>
+              <img src="./images/carro-bmw.png" alt="" />
+              <h3>BMW Car</h3>
+              <p>
+                  Series 3 3.0 Convertible 2dr Step Auto Diesel
+              </p>
+              <div class="price">
+            <del>£10,000</del>
+                <strong>£ 6,950</strong>
+            </div>
+              <button type="button">Details</button>
+            </li>
+            <li class="central-item">
+              <img src="./images/carro-bmw.png" alt="" />
+              <h3>BMW Car</h3>
+              <p>
+                  Series 3 3.0 Convertible 2dr Step Auto Diesel
+              </p>
+              <div class="price">
+            <del>£10,000</del>
+                <strong>£ 6,950</strong>
+            </div>
+              <button type="button">Details</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#carousel-images").slick({
+          autoplay: true,
+        });
+
+        $(".menu-hamburguer").click(function () {
+          $("nav").slideToggle();
+        });
+      });
+    </script>
+  </body>
 </html>
