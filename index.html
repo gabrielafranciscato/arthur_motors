@@ -80,7 +80,7 @@
     
     <section>
       <div class="container">
-        <h2>Best-selling</h2>
+        <h2>Latest Arrivals </h2>
         <ul class="container-flex vehicles-list">
           <li>
             <img src="./images/carro-bmw.png" alt="" />
@@ -89,7 +89,7 @@
                 Series 3 3.0 Convertible 2dr Step Auto Diesel
             </p>
             <div class="price">
-                <strong>£ 6,950</strong>
+                <strong>£ 12,300</strong>
             </div>
             
             <button type="button">Details</button>
@@ -101,7 +101,7 @@
                 Series 3 3.0 Convertible 2dr Step Auto Diesel
             </p>
             <div class="price">
-                <strong>£ 6,950</strong>
+                <strong>£ 12,300</strong>
             </div>
             <button type="button">Details</button>
           </li>
@@ -112,7 +112,7 @@
                 Series 3 3.0 Convertible 2dr Step Auto Diesel
             </p>
             <div class="price">
-                <strong>£ 6,950</strong>
+                <strong>£ 12,300</strong>
             </div>
             <button type="button">Details</button>
           </li>
@@ -123,7 +123,7 @@
                 Series 3 3.0 Convertible 2dr Step Auto Diesel
             </p>
             <div class="price">
-                <strong>£ 6,950</strong>
+                <strong>£ 12,300</strong>
             </div>
             <button type="button">Details</button>
           </li>
@@ -134,7 +134,7 @@
                 Series 3 3.0 Convertible 2dr Step Auto Diesel
             </p>
             <div class="price">
-                <strong>£ 6,950</strong>
+                <strong>£ 12,300</strong>
             </div>
             <button type="button">Details</button>
           </li>
@@ -144,7 +144,7 @@
 
     <section>
         <div class="container">
-          <h2>Sales</h2>
+          <h2>Used Cars</h2>
           <ul class="container-flex vehicles-list">
             <li>
               <img src="./images/carro-bmw.png" alt="" />
@@ -209,7 +209,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section id="contact">
         <div class="container">
           <h2>Contact us</h2>
           <form>
@@ -262,48 +262,6 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#carousel-images").slick({
-          autoplay: true,
-        });
-
-        $(".menu-hamburguer").click(function () {
-          $("nav").slideToggle();
-        })
-
-        $('#phone').mask('00000 000000')
-
-        $('form').validate({
-            rules: {
-                  name: {
-                      required:true
-                  },
-                  email: {
-                      required:true,
-                      email:true
-                  },
-                  phone: {
-                      required:true
-                  },
-                  message: {
-                      required:false,
-                  }
-            },
-            message:{
-              name: 'type your name here'
-            },
-            submitHandler: function(form) {
-              console.log(form)
-            },
-            invalidHandler: function(evento, validador) {
-              let incorrectCamps = validador.numberOfInvalids();
-              if (incorrectCamps) {
-                alert(`${incorrectCamps} incorrects camps`)
-              }
-            }
-        })
-      })
-    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
