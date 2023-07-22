@@ -215,23 +215,19 @@
           <form>
             <div class="form-area">
               <label for="name">Name</label>
-              <input type="text" id="name">
+              <input type="text" id="name" name="name">
             </div>
             <div class="form-area">
               <label for="phone">Phone number</label>
-              <input type="tel" id="phone">
+              <input type="tel" id="phone" name="phone">
             </div>
             <div class="form-area">
               <label for="email">Email</label>
-              <input type="email" id="email">
-            </div>
-            <div class="form-area">
-              <label for="Apply">Apply now</label>
-              <input type="text" id="Apply">
+              <input type="email" id="email" name="email">
             </div>
             <div class="form-area">
               <label for="message">Message</label>
-              <textarea id="message"></textarea>
+              <textarea id="message" name="message"></textarea>
             </div>
             <button type="submit">Send</button>
           </form>
@@ -261,18 +257,11 @@
           </ul>
         </div>
       </footer>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
     <script>
       $(document).ready(function () {
         $("#carousel-images").slick({
@@ -281,8 +270,40 @@
 
         $(".menu-hamburguer").click(function () {
           $("nav").slideToggle();
-        });
-      });
+        })
+
+        $('#phone').mask('00000 000000')
+
+        $('form').validate({
+            rules: {
+                  name: {
+                      required:true
+                  },
+                  email: {
+                      required:true,
+                      email:true
+                  },
+                  phone: {
+                      required:true
+                  },
+                  message: {
+                      required:false,
+                  }
+            },
+            message:{
+              name: 'type your name here'
+            },
+            submitHandler: function(form) {
+              console.log(form)
+            },
+            invalidHandler: function(evento, validador) {
+              let incorrectCamps = validador.numberOfInvalids();
+              if (incorrectCamps) {
+                alert(`${incorrectCamps} incorrects camps`)
+              }
+            }
+        })
+      })
     </script>
   </body>
 </html>
